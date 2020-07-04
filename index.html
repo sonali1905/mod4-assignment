@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        .container{
+            border:2px solid red;
+            margin: 3px 0px;
+            background:cyan;
+            padding: 9px;
+        }
+        .bg-primary{
+            background-color: blueviolet;
+        }
+        .text-sucess{
+            background: white;
+        }
+    </style>
+</head>
+<body>
+ <h1> first time user of  the javascript</h1>  
+ <div id="firstcontainer" class="container">
+     <button id="btn" onclick="clicked()">click me  </button>
+<p>this is the universe best paragraph</p>
+ </div>
+ <div class="container">
+     <p>This is a paragraph</p>
+ </div>
+<script> 
+//console.log("Hello world", 4+6, "Another log");
+//  * alert("me")*//
+//document.write("This is my document");
+//console.warn("This is warning");
+//console.error("This is an error");
+//console.clear();
+/*var num1 = 36;
+var num2 = 54;
+console.log(num1 + num2);
+var num1= 455;
+var num2=56.76;
+var str1 ="This is a string";
+var str2="This is also a string";
+var marks={
+    ravi: 45,
+    subhum:80,
+    sonali: 99,
+}
+var a=true;
+var b= false;*/
+//console.log(a,b)
+
+//var und=undefined;
+var und;
+//console.log(und)
+
+var n = null;
+//console.log(n)
+
+var arr= [1,2,"sona",4,5];
+//console.log(arr)
+
+var a=100;
+ var b=10;
+// console.log(a+b)
+/*var c=b;
+c+=2;
+console.log(c)
+
+var x=34;
+var y=56;
+console.log(x==y)
+console.log(x>=y)
+console.log(x<=y)
+
+console.log(true && true)
+console.log(true && false)
+console.log(false && true)
+console.log(false && false)
+
+console.log(true || true)
+console.log(true || false)
+console.log(false || true)
+console.log(false || false)*/
+
+/*console.log(!false)
+console.log(!true)
+
+function avg(a ,b)
+{
+    return((a+b)/2);
+}
+
+c1=avg(4,4);
+c2=avg(12,12)*/
+
+//console.log(c1, c2);
+/*var age=4;
+if(age>18){
+    console.log("You can drink rasn awater");
+}
+else{
+    console.log("You can drink rasna awater")
+    
+}*/
+/*var arr=[1,2,3,4,5,6,7];
+arr.forEach(function(element){
+    console.log(element)
+})
+let j=0;
+while(j<arr.length)
+{
+    console.log(arr[j]);
+    j++;
+}*/
+/*let j=0;
+do{
+    console.log(arr[j])
+    j++;
+}while(j<arr.length);*/
+/*var arr = [1,2,3,4,5,6,7]
+    for(var i=0;i<arr.length;i++){
+    if(i==2){
+         continue;
+    }
+    console.log(arr[i]);
+}*/
+let myarr=["fan","camera",34, null, true];
+//myarr.pop();
+//myarr.push("Harry");
+//myarr.shift();
+/*const newlen=myarr.unshift("Harry");
+console.log(newlen);
+console.log(myarr);*/
+
+let mylovelystring="Sonali is a good girl good good";
+/*console.log(mylovelystring.length);
+console.log(mylovelystring.indexOf("good"))*/
+//console.log(mylovelystring.slice(0,3))
+//d=mylovelystring.replace("Sonali","Nickis")
+//console.log(d);
+//console.log(mylovelystring.replace("good","bad"))
+
+/*let mydate=new Date();
+console.log(mydate.getTime())
+console.log(mydate.getFullYear());
+
+console.log(mydate.getDay());
+console.log(mydate.getHours());
+console.log(mydate.getMinutes());*/
+
+
+let elem = document.getElementById('click')
+console.log(elem);
+
+let elemClass = document.getElementsByClassName("container")
+console.log(elemClass);
+//elemClass[0].style.background="yellow"
+elemClass[0].classList.add("bg-primary")
+elemClass[0].classList.add("text-success")
+//console.log(elem.innerHTML);
+//console.log(elem.innerText);
+/*tn=document.getElementsByTagName('div')
+console.log(tn);
+createdElement=document.createElement('p')
+createdElement.innerText="This is created paragraph";
+tn[0].appendChild(createdElement)
+createdElement2=document.createdElement2("b")
+createdElement2.innerText="This is cfeated bold";
+tn[0].replaceChild(createdElement2, createdElement);*/
+
+//console.log(elemClass[0].innerHTML);
+//console.log(elemClass[0].innerText);
+
+/*sel=document.querySelector('.container')
+console.log(sel)
+sel=document.querySelectorAll(".container")
+console.log(sel)
+
+function clicked(){
+    console.log('the button was clicked')
+}*/
+
+/*window.onload=function(){
+    console.log('the document was loaded')
+}*/
+/*firstcontainer.addEventListener('click', function(){
+    document.querySelectorAll('.container')[1].innerHTML="<b>TThis was clicked</b>"
+        console.log("Click hogya bhaiya!!")
+})*/
+/*let prevHTML= document.querySelectorAll(".container")[1].innerHTML
+firstContainer.addEventListener('mouseover', function(){
+    document.querySelectorAll(".container")[1].innerHTML=prevHTML
+    console.log("Mouse aagya bhai!!")
+    })
+firstContainer.addEventListener('mouseout',function({
+    document.querySelectorAll('Container')[1].innerHTML <b>"This was clicked"</b>
+    console.log("Mouse down ")
+})*/
+
+//function summ(a,b){
+ //   return a+b;
+//}
+/*summ=(a,b)=>{
+    return a+b;
+}
+logkaro= ()=>{
+    document.querySelectorAll('.container')[1].innerHTML="<b>TThis was clicked</b>"
+
+
+    console.log("I am your logged");
+}
+clr=setTimeout(logkaro, 2000
+)*/
+/*obj= {name:"Sonali", length: 1, a:{this:'tha"t'}}
+jso=JSON.stringify(obj);
+console.log(typeof jso);
+console.log(jso)
+parsed =JSON.parse(`{"name":"Sonali"."length":1,"a":{"this":"that}}`)
+console.log(parsed)*/
+/*var message= "in global";
+console.log("global:message=" +message);
+{
+    var a=function(){
+var messagee="inside a";
+console.log("a:meassge="+message);
+b();
+}
+function b(){
+    console.log(b:"message="+message)
+}
+a()*/
+/*var x;
+console.log(x)
+if(x==undefined)
+{
+    console.log("x is undefined");
+
+}
+x=5;
+if(x==undefined)
+{
+    console.log("x is undefined")
+}
+else{
+    console.log("X is defined")
+}*/
+
+/*var string="Hello"
+string+="world"
+console.log(string + "!")*/
+
+/*console.log((5+3)/3);
+console.log(undefined/5);
+function  test1(a){
+    console.log(a/5);
+}
+test1();*/
+
+/*varx=4, y=4
+if(x==y){
+    console.log("x=4 is equal to y=4");
+
+}
+x="4";
+if(x==y){
+    console.log("x='4'is equal to y=4")
+}*/
+
+/*if(false|| null|| 0||NaN ||undefined ||"")
+{
+    console.log("This line won't ever executred");
+}
+else{
+    console.log("All false");
+}
+if(true&& "hello"&& 1 &&-1&&"false")
+{
+    console.log("All true")
+}*/
+
+/*function a()
+    {
+        return
+        {
+            name:"Sonali"
+        };
+    }
+function b(){
+    return{
+        name:"Sonali"
+    };
+
+}
+console.log(a());
+console.log(b())*/
+/*var sum=0
+for(var i=0;i<10;i++){
+    sum=sum+i
+}
+console.log("sum of 0 to 9=sum")*/
+
+/*function orderchickenwith(sidedish){
+        sidedish =sidedish || "Whatever!";
+    console.log("chicken with" + sidedish)
+}
+orderchickenwith("noodles")
+orderchickenwith()*/
+
+/*ar company= new Object();
+company.name="facebook";
+company.ceo= new Object();
+company.ceo.firstName = "mark";
+console.log(company);
+console.log("company CEO name is:"+company.ceo.firstname);
+console.log(company["name"]);
+company["stock of company"]=110;
+var company= new Object();
+company .name="Facebook"*/
+
+/*var facebook = {
+    name: "facebook",
+    ceo : {
+        firstname: "Sonali",
+        favcolor: "Black",
+    },
+    "Stock of company ": 110
+};
+console.log(facebook.ceo.firstname);*/
+
+/*function multiply(x,y){
+    return x*y;
+}
+console.log(multiply(5 , 3));
+multiply.version= "v.1.0.0";
+console.log(multiply.version);*/
+
+/*function makemultiplier(multiplier){
+    var myfunc=function(x){
+        return multiplier*x;
+    };
+    return myfunc;
+}
+var multiplyby3=makemultiplier(3);
+console.log(multiplyby3(10));
+var doubleall=makemultiplier(2)
+console.log(doubleall(100))
+
+function doOperation(x, Operation){
+    return Operation(x);
+}
+var result=doOperation(5,multiplyby3);
+console.log(result);*/
+
+/*var a=7;
+var b=a;
+console.log("a:"+a);
+console.log("b:"+b);
+
+b=5;
+console.log("b after update:");
+console.log("a:"+a);
+console.log("b:"+b)*/
+
+/*var a={x:7}
+var b=a;
+console.log(a);
+console.log(b);
+
+b.x=5;
+console.log("after b.x update:");
+console.log(b);
+console.log(a);*/
+
+/*function changeprimtive(primvalue){
+    console.log("in changeprimitive");
+    console.log("before");
+    console.log("primvalue");
+    primvalue=5;
+    console.log(after);
+    console.loG("primeinvslur");*/
+
+/*function test(){
+    console.log(this);
+}
+test();
+function Circle(radius){
+    this.radius=radius;
+}
+var myCircle= new Circle(10)
+console/log(myCircle).*/
+
+/*var array= new Array();
+array[0]= "Sonali";
+array[1]= 2;
+array[2]= function (name){
+    console.log("Hello  "+name);
+};
+array[3]= {course: "Html, css and js"};
+
+console.log(array);
+array[2](array[0]);
+console.log(array[3].course*/
+ 
+ var names=["Sonali","Monika","Jharna"];
+ names[100]="pagal";
+ for(var i=0; i<names.length; i++)
+ {
+     console.log("Hello " +names[i]);
+ }
+</script>
+</body>
+</html>
